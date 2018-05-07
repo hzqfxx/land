@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.land.landparent.com.test.land.landparent.admin.dao.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.test.land.landparent.com.test.land.landparent.admin.entity.User">
+        <id column="t_id" property="tId" />
+        <result column="t_name" property="tName" />
+        <result column="t_username" property="tUsername" />
+        <result column="t_password" property="tPassword" />
+        <result column="t_create_time" property="tCreateTime" />
+        <result column="t_lastlogin_time" property="tLastloginTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        t_id AS tId, t_name AS tName, t_username AS tUsername, t_password AS tPassword, t_create_time AS tCreateTime, t_lastlogin_time AS tLastloginTime
+    </sql>
+
+</mapper>

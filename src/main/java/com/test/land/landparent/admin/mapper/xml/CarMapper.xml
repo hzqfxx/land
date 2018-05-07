@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.land.landparent.admin.mapper.CarDao">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.test.land.landparent.admin.entity.Car">
+        <id column="id" property="id" />
+        <result column="car_brand" property="carBrand" />
+        <result column="car_name" property="carName" />
+        <result column="car_type" property="carType" />
+        <result column="car_new_price" property="carNewPrice" />
+        <result column="car_mall_price" property="carMallPrice" />
+        <result column="car_old_price" property="carOldPrice" />
+        <result column="car_evaluation" property="carEvaluation" />
+        <result column="car_city_id" property="carCityId" />
+        <result column="car_city_name" property="carCityName" />
+        <result column="car_createtime" property="carCreatetime" />
+        <result column="car_url" property="carUrl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, car_brand AS carBrand, car_name AS carName, car_type AS carType, car_new_price AS carNewPrice, car_mall_price AS carMallPrice, car_old_price AS carOldPrice, car_evaluation AS carEvaluation, car_city_id AS carCityId, car_city_name AS carCityName, car_createtime AS carCreatetime, car_url AS carUrl
+    </sql>
+
+</mapper>
