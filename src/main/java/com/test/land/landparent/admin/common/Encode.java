@@ -1,16 +1,6 @@
 package com.test.land.landparent.admin.common;
 
-/*
- * RedisCache.java
- * Copyright (c) 2017,浙江心怡科技
- * All rights reserved.
- * ---------------------------------------------------------------------
- */
 
-import java.io.ByteArrayOutputStream;
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.List;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

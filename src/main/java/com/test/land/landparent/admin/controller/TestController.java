@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.test.land.landparent.admin.entity.User;
@@ -16,7 +16,7 @@ import com.test.land.landparent.admin.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
 
-@RestController
+@Controller
 @Slf4j
 public class TestController {
 
@@ -35,7 +35,7 @@ public class TestController {
      * @return
      */
     @GetMapping(value = "/")
-    public User getUser(){
+    public String getUser(){
         EntityWrapper<User> ew = new EntityWrapper<>();
         ew.eq("id",1);
 
@@ -49,7 +49,7 @@ public class TestController {
 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("123","321");
-        return user;
+        return "index.html";
 
     }
     /**

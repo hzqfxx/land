@@ -1,19 +1,7 @@
 package com.test.land.landparent.admin.common.utils;
 
-/*
- * SpringContextHelper.java
- * Copyright (c) 2017,浙江心怡科技物流
- * All rights reserved.
- * ---------------------------------------------------------------------
- * 2017-1-3 Created
- */
-
-import org.slf4j.Logger;
-import org.springframework.context.ApplicationContext;
-
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.DisposableBean;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
